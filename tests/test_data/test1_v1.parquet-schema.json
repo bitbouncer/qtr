@@ -1,0 +1,162 @@
+{
+  "fields": [
+    {
+      "name": "exchange",
+      "optional": false,
+      "type": "string"
+    },
+    {
+      "name": "symbol",
+      "optional": false,
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "optional": true,
+      "type": "int64"
+    },
+    {
+      "name": "local_timestamp",
+      "optional": false,
+      "type": "int64"
+    },
+    {
+      "name": "type",
+      "optional": false,
+      "type": "string"
+    },
+    {
+      "name": "strike_price",
+      "optional": false,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "expiration",
+      "optional": false,
+      "type": "int64"
+    },
+    {
+      "name": "open_interest",
+      "optional": false,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "last_price",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "bid_price",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "bid_amount",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "bid_iv",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "ask_price",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "ask_amount",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "ask_iv",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "mark_price",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "mark_iv",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "underlying_index",
+      "optional": false,
+      "type": "string"
+    },
+    {
+      "name": "underlying_price",
+      "optional": true,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "delta",
+      "optional": true,
+      "type": "double"
+    },
+    {
+      "name": "gamma",
+      "optional": true,
+      "type": "double"
+    },
+    {
+      "name": "vega",
+      "optional": true,
+      "type": "double"
+    },
+    {
+      "name": "theta",
+      "optional": true,
+      "type": "double"
+    },
+    {
+      "name": "rho",
+      "optional": true,
+      "type": "double"
+    }
+   ],
+  "name": "test1_v1",
+  "type": "record"
+}
