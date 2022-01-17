@@ -119,6 +119,17 @@ operator>>(StreamReader &stream,
   return stream;
 }
 
+inline StreamReader &operator>>(StreamReader &stream, nonstd::optional<date::sys_days> &v) {
+  static_cast<UnsafeStreamReader *>(&stream)->CheckColumn(Type::INT32, ConvertedType::DATE);
+  nonstd::optional<int32_t> tmp;
+  static_cast<UnsafeStreamReader *>(&stream)->ReadOptional<Int32Reader, int32_t>(&tmp);
+  if (tmp)
+    v = date::sys_days{} + date::days{*tmp};
+  else
+    v.reset();
+  return stream;
+}
+
 template <class T>
 StreamReader &operator>>(StreamReader &stream, std::optional<T> &v) {
   nonstd::optional<T> tmp;
