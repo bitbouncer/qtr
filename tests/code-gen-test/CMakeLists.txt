@@ -41,5 +41,5 @@ SET(PROMETHEUS_CPP_LIBS prometheus-cpp-push prometheus-cpp-core curl)
 SET(EXT_LIBS ${ARROW_LIBS} ${AWS_S3_LIBS} ${BOOST_LIBS} date-tz snappy glog gflags stdc++fs dl pq)
 set(ALL_LIBS qtr ${EXT_LIBS})
 
-add_executable(autogen_test1 main.cpp test1_v1.cpp test1_v1.h)
+add_executable(autogen_test1 main.cpp test1_v1.cpp test1_v1.h schema_test_all.cpp schema_test_all.h)
 target_link_libraries(autogen_test1 ${ALL_LIBS})

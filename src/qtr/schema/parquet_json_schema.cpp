@@ -255,9 +255,11 @@ load_parquet_schema(std::string filename) {
     LOG(ERROR) << "cannot open " << filename << std::endl;
     return nullptr;
   }
-  std::ifstream i(filename);
-  json j;
-  i >> j;
+
+  std::ifstream ifs(filename);
+  // accept comments in schemas
+  json j = json::parse(ifs, nullptr, true, true);
+
   std::shared_ptr<parquet::schema::GroupNode> parquet_schema =
       qtr::json_to_group_node(j);
   return parquet_schema;

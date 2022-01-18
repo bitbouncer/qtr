@@ -1,0 +1,113 @@
+{
+  "fields": [
+    {
+      "name": "a_string",
+      "optional": false,
+      "type": "string"
+    },
+    //    {
+    //      "name": "a_map",
+    //      "optional": false,
+    //      "type": "map"
+    //   },
+    //    {
+    //      "name": "a_list",
+    //      "optional": false,
+    //      "type": "list"
+    //    },
+    //   {
+    //  "name": "a_enum",
+    //  "optional": false,
+    //  "type": "enum"
+    //},
+    {
+      "name": "a_decimal32",
+      "optional": false,
+      "physical_size": 32,
+      "precision": 8,
+      "scale": 4,
+      "type": "decimal"
+    },
+    {
+      "name": "a_decimal64",
+      "optional": false,
+      "physical_size": 64,
+      "precision": 18,
+      "scale": 8,
+      "type": "decimal"
+    },
+    {
+      "name": "a_date32",
+      "optional": false,
+      "type": "date32"
+    },
+    {
+      "name": "a_time32_ms",
+      "optional": false,
+      "type": "time32_ms"
+    },
+    {
+      "name": "a_timestamp_ms",
+      "optional": false,
+      "type": "timestamp_ms"
+    },
+//    {
+//      "name": "a_interval",
+//      "optional": false,
+//      "type": "interval"
+//    },
+    {
+      "name": "a_int8",
+      "optional": false,
+      "type": "int8"
+    },
+    {
+      "name": "a_int16",
+      "optional": false,
+      "type": "int16"
+    },
+   {
+      "name": "a_int32",
+      "optional": false,
+      "type": "int32"
+    },
+   {
+      "name": "a_int64",
+      "optional": false,
+      "type": "int64"
+    },       
+    //   {
+    //     "name": "a_json",
+    //     "optional": false,
+    //     "type": "json"
+    //  },
+    //{
+    //  "name": "a_bson",
+    //  "optional": false,
+    //  "type": "bson"
+    //},
+    //{
+    //  "name": "a_uuid",
+    //  "optional": false,
+    //  "type": "uuid"
+    //},
+    {
+      "name": "a_bool",
+      "optional": false,
+      "type": "bool"
+    },      
+
+    {
+      "name": "a_double",
+      "optional": false,
+      "type": "double"
+    },      
+    {
+      "name": "a_float",
+      "optional": false,
+      "type": "float"
+    }      
+   ],
+  "name": "schema_test_all",
+  "type": "record"
+}

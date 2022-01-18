@@ -9,7 +9,7 @@
 using json = nlohmann::json;
 
 int main(int argc, char **argv) {
-  if (argc <=2 ) {
+  if (argc <= 2) {
     std::cerr << "usage " << argv[0] << "src, dst_root" << std::endl;
     // Fake success for CI purposes.
     return EXIT_SUCCESS;
@@ -23,12 +23,10 @@ int main(int argc, char **argv) {
 
   std::string dst_root;
   if (argc == 3)
-    dst_root = argv [2];
+    dst_root = argv[2];
 
-
-  std::ifstream i(src);
-  json j;
-  i >> j;
+  std::ifstream ifs(src);
+  json j = json::parse(ifs, nullptr, true, true);
 
   auto group_node = qtr::json_to_group_node(j);
 
